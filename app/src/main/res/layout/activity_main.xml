@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <Button
+        android:id="@+id/btLadoPar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Lado Par"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@id/btLadoImpar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btLadoImpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Lado Impar"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btLadoPar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="8dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btLadoImpar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOpen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:text="Porta 1"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/btnOpen3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_line" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOpen3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:text="Porta 3"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/btnOpen5"
+        app:layout_constraintStart_toEndOf="@id/btnOpen1"
+        app:layout_constraintTop_toBottomOf="@id/v_line" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOpen5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:text="Porta 5"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnOpen3"
+        app:layout_constraintTop_toBottomOf="@id/v_line" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOpen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:text="Porta 2"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/btnOpen4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_line" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOpen4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:text="Porta 4"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/btnOpen6"
+        app:layout_constraintStart_toEndOf="@id/btnOpen2"
+        app:layout_constraintTop_toBottomOf="@id/v_line" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOpen6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        android:text="Porta 6"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnOpen4"
+        app:layout_constraintTop_toBottomOf="@id/v_line" />
+
+    <Button
+        android:id="@+id/btCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Lado Par"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@id/btLadoImpar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
